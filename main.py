@@ -29,15 +29,15 @@ def denied():
 margin = Canvas(root, width=500, bg='#EBB8C1', height=100,
                 bd=0, highlightthickness=0, relief='ridge')
 margin.pack()
-text_id = Label(root, bg='#EBB8C1', text='Quer namorar comigo?',
+text_id = Label(root, text='Quer namorar comigo?', bg='#EBB8C1',
                 fg='#5C053A', font=('Century Gothic', 24, 'bold'))
 text_id.pack()
 button_1 = tk.Button(root, text='Não', bg='#EBB8C1', command=denied,
-                     relief=RIDGE, bd=3, font=('Century Gothic', 8, 'bold'))
+                     relief=RIDGE, bd=2, font=('Century Gothic', 14, 'bold'))
 button_1.pack()
 root.bind('<Motion>', move_button_1)
-button_2 = tk.Button(root, text='Sim', bg='#EBB8C1', relief=RIDGE,
-                     bd=3, command=accepted, font=('Century Gothic', 14, 'bold'))
+button_2 = tk.Button(root, text='Sim', bg='#EBB8C1', command=accepted,
+                     relief=RIDGE, bd=2, font=('Century Gothic', 14, 'bold'))
 button_2.pack()
 
 
